@@ -1,0 +1,192 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.quicksand-font {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* shared styles */
+
+.btn {
+    padding: 10px;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    line-height: 30px;
+    width: 197px;
+    text-align: center;
+}
+
+.btn-primary{
+    background: orange;
+    margin-left: 20px;
+}
+
+.btn-secondary{
+    background: black;
+}
+
+ul>li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.primary-text{
+    color: orange;
+}
+
+.sky-blue-text{
+    color: skyblue;
+}
+
+.aqua-text{
+    color: rgba(5, 212, 223, 1);
+}
+
+.blue-text{
+    color: rgba(93, 88, 239, 1);
+}
+
+/* navbar styles */
+
+.container{
+    max-width: 1160px;
+    margin: 0 auto;
+}
+.header{
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.navbar, .mobile-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo-text {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul li{
+    margin-left: 32px;
+}
+
+.menu ul li:first-child{
+    margin-left: 0;
+}
+
+.menu .link{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+/* hero section styles */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content{
+    margin-right: 50px;
+}
+.hero-title{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 61px;
+    color: black;
+}
+
+.description{
+    font-size: 20px;
+    color: black;
+    margin: 20px 0;
+}
+
+
+
+
+
+
+
+
+
+
+/* desktop device responsive */
+
+@media screen and (min-width: 577px) {
+    .mobile-nav{
+        display: none;
+    }
+}
+
+
+/* medium device responsive */
+
+@media screen and (max-width: 768px) {
+ 
+}
+
+
+/* mobile device responsive */
+
+@media screen and (max-width: 576px) {
+    .navbar{
+        display: none;
+    }
+    .header{
+        padding: 12px 16px;
+        border-bottom: 0.5px solid orange;
+    }
+    .hero{
+        flex-direction: column-reverse;
+        margin: 0 16px;
+    }
+    .hero-title{
+        font-size: 32px;
+        line-height: 40px;
+    }
+    
+    .description{
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 6px 20px;
+        border-radius: 8px;
+        font-size: 16px;
+        width: 131px;
+    }
+
+    .hero-content{
+        text-align: center;
+        margin-right: 0;
+    }
+}

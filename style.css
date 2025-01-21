@@ -1,6 +1,8 @@
 /* Google font */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 .quicksand-font {
   font-family: "Quicksand", serif;
@@ -9,6 +11,12 @@
   font-style: normal;
 }
 
+.raleway-font {
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
 /* shared styles */
 
 .btn {
@@ -54,6 +62,13 @@ a{
 
 .blue-text{
     color: rgba(93, 88, 239, 1);
+}
+
+.title{
+    font-size: 46px;
+    line-height: 58px;
+    color: #000;
+    text-align: center;
 }
 
 /* navbar styles */
@@ -131,9 +146,49 @@ a{
 }
 
 
+/* card section styles */
 
+.Standard-Curriculum{
+    margin-bottom: 80px;
+}
+.box-container{
+    display: flex;
+    gap: 28px;
+}
 
+.box {
+    background-image: linear-gradient(#DEF5FF, #fff 40%);
+    border: 1px solid #DEF5FF;
+    border-radius: 18px;
+    text-align: center;
+    padding: 40px;
+ 
+}
 
+.box-title{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    color: rgba(32, 32, 32, 1);
+}
+
+.box-description{
+    font-size: 15px;
+    line-height: 28px;
+    color: rgba(128, 128, 128, 1);
+    margin: 32px 0;
+    font-family: Raleway;
+}
+
+.box a{
+    font-size: 15px;
+    line-height: 28px;
+}
+
+.btn-1{
+    color: #64C8FF;
+
+}
 
 
 
@@ -168,6 +223,10 @@ a{
     .hero{
         flex-direction: column-reverse;
         margin: 0 16px;
+        margin-bottom: 20px;
+    }
+    .hero img{
+        margin: 0 10px;
     }
     .hero-title{
         font-size: 32px;
